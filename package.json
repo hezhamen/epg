@@ -15,7 +15,7 @@
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
     "postinstall": "npm run api:load",
-    "start": "npm run grab --- --site=example.com && npm run serve"
+    "start": "npm run grab --- --site=telkussa.fi && npm run channels:parse --- --config=./sites/telkussa.fi/telkussa.fi.config.js --output=./sites/telkussa.fi/telkussa.fi.channels.xml && npm run serve"
   },
   "private": true,
   "author": "Arhey",
