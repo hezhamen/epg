@@ -14,7 +14,8 @@
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "npm run api:load"
+    "postinstall": "npm run api:load",
+    "start": "npm run grab --- --site=example.com && npm run serve"
   },
   "private": true,
   "author": "Arhey",
